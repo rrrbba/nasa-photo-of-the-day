@@ -7,8 +7,9 @@ const NasaPage = styled.div`
     margin: 50px;
     background: #FE2E7A;
     padding 5%;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: gold;
+    font-family: 'Playfair Display', serif;
 `;
 
 
