@@ -12,7 +12,7 @@ const NasaPage = styled.div`
     font-family: 'Playfair Display', serif;
 `;
 
-
+//to get more then one image, use &count=# to get an array of images
 
 export default function NasaList() {
     
