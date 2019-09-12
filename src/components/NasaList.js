@@ -1,6 +1,17 @@
 import React, { useState, useEffect} from "react";
 import axios from "axios";
 import NasaCard from './NasaCard';
+import styled from "styled-components";
+
+const NasaPage = styled.div`
+    margin: 50px;
+    background: #FE2E7A;
+    padding 5%;
+    font-size: 1.5rem;
+    color: gold;
+`;
+
+
 
 export default function NasaList() {
     
@@ -18,16 +29,19 @@ export default function NasaList() {
             })
 },[]);
     return (
-        <div>
-            
+  
+            <NasaPage>
             <NasaCard 
-           
-            title = {pictures.title}
+            
+             title = {pictures.title} 
+            
+
             img = {pictures.hdurl}
             date = {pictures.date}
             explain = {pictures.explanation}
             />
-     </div>
+            </NasaPage>
+
     )
  }
 
